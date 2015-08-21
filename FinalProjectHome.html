@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartPark</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script>
+		function changePicture(){
+			$("#mehak").attr('src', $('#options').val() + '.png');
+		}
+	</script>
+</head>
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+	<p align=center><b><font size="7" face="georgia">SmartPark</font></b></p>
+
+	<div data-role="content">
+		<center><img id = "picHolder" src = "map.png" width ="300" height: "300"></img>
+		<a href="#yay.jpg"><center><button name = "button">Store My Location</button></center></a><p></p>
+		<a href="#car.jpg"><center><button type=button>Find My Car</button></center></a>
+		<a href="#parking.jpg"><center><button type=button>Available Parking</button></center></a>
+		
+		
+		<p align="right"><a href="#foo"><img src = "house.jpg"></a>
+	<a href="#foo"><img src = "question.jpg"></a></p>
+	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+
+<title>Store My Location</title>
+
+<div data-role="page" id="yay.jpg">
+<p align=center><b><font size="7" face="georgia">Store My Location</font></b></p>
+		<div data-role="content">
+		
+		<center><p>What floor are you on?</p>
+	<select name="select-choice-a" class="options" data-native-menu="false">
+			<!--<option>Levels</option>-->
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		
+		<center><p>What's your allotted time for parking?</p>
+		<select name="select-choice-a" class="options" data-native-menu="false">
+			<!--<option>Hours</option>-->
+			<option value="0">0hours</option>
+			<option value="1">1hour</option>
+			<option value="2">2hours</option>
+			<option value="3">3hours</option>
+			<option value="4">4hours</option>
+			<option value="5">5hours</option>
+			<option value="6">6hours</option>
+			<option value="7">7hours</option>
+			<option value="8">8hours</option>
+			<option value="9">9hours</option>
+			<option value="10">10hours</option>
+			<option value="11">11hours</option>
+			<option value="12">12hours</option>
+			<option value="13">13hours</option>
+			<option value="14">14hours</option>
+			<option value="15">15hours</option>
+			<option value="16">16hours</option>
+			<option value="17">17hours</option>
+			<option value="18">18hours</option>
+			<option value="19">19hours</option>
+			<option value="20">20hours</option>
+			<option value="21">21hours</option>
+			<option value="22">22hours</option>
+			<option value="23">23hours</option>
+			
+		</select>
+		
+		<select name="select-choice-a" class="options" data-native-menu="false">
+			<!--<option>minutes</option>-->
+			<option value="0">0mins</option>
+			<option value="1">5mins</option>
+			<option value="2">10mins</option>
+			<option value="3">15mins</option>
+			<option value="4">20mins</option>
+			<option value="5">25mins</option>
+			<option value="6">30mins</option>
+			<option value="7">35mins</option>
+			<option value="8">40mins</option>
+			<option value="9">45mins</option>
+			<option value="10">50mins</option>
+			<option value="11">55mins</option>
+
+			<input type="button" value="Store Location" data-theme="b" onclick="changePicture()">
+			
+		</select>
+				
+	<p align="right"><a href="#foo"><img src = "house.jpg"></a>
+	<a href="#foo"><img src = "question.jpg"></a></p>
+		
+		
+				
+		
+		<img id="mehak" src = ""></img>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Student at Girls Who Code</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="car.jpg">
+	<div data-role="header">
+		<h1>Find My Car</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<p><a href="#foo">Back to Home</a></p>
+	</div>
+	
+	
+	<p align="right"><a href="#foo"><img src = "house.jpg"></a>
+	<a href="#foo"><img src = "question.jpg"></a></p>
+	
+	</div>
+
+<div data-role="page" id="parking.jpg">
+	<div data-role="header">
+		<h1>Find My Car</h1>
+	</div><!-- /header -->
+<p align="right"><a href="#foo"><img src = "house.jpg"></a>
+	<a href="#foo"><img src = "question.jpg"></a></p>
+	<div data-role="content">
+		<p><a href="#foo">Back to Home</a></p>
+	
+</div>
+</div>
+</body>
+</html>
